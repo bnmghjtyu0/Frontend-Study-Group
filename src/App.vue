@@ -1,19 +1,32 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-view/>
+    <div class="container-fluid">
+      <div class="row">
+        <sidebar />
+        <div class="main ml-3">
+          <img src="./assets/logo.png" />
+          <router-link to="/">Hello</router-link>
+          <router-link to="/home">Home</router-link>
+          <router-view />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
+import Sidebar from "./container/Sidebar.vue";
 export default {
-  name: 'App'
-}
+  name: "App",
+  components: {
+    Sidebar
+  }
+};
 </script>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Merienda&display=swap");
+$backgroundColor: #f7f9ff;
+$mainColor: #525ce5;
+$mainDeepColor: #223a80;
+$mainLightColor: #ccd2e3;
+
+.text-mainColor {
+  color: $mainColor;
+}
+.text-mainLightColor {
+  color: $mainLightColor;
+}
+.text-mainDeepColor {
+  color: $mainDeepColor;
+}
+
+body {
+  padding: 20px;
+  background-color: $backgroundColor;
+  font-family: "Merienda", "Microsoft JhengHei", cursive;
+}
+
+.sidebar {
+  border-radius: 6px;
+  width: 300px;
+  min-height: 600px;
+  display: block;
+  padding: 20px;
+  ul {
+    padding-left: 0;
+    li {
+      list-style: none;
+      padding: 6px;
+      a {
+        padding: 15px 20px;
+        border-radius: 0.375rem;
+        color: $mainLightColor;
+        display: flex !important;
+        flex-wrap: nowrap;
+        &.active {
+          padding-left: 30px;
+          display: block;
+          background: linear-gradient(0deg, #5761e6, #747ced);
+        }
+      }
+      ul {
+      }
+    }
+  }
+}
+
+.main {
+  .header {
+    width: 100%;
+  }
+}
