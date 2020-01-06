@@ -2,11 +2,8 @@
   <div id="app">
     <div class="container-fluid">
       <div class="row">
-        <sidebar />
+        <Sidebar />
         <div class="main ml-3">
-          <img src="./assets/logo.png" />
-          <router-link to="/">Hello</router-link>
-          <router-link to="/home">Home</router-link>
           <router-view />
         </div>
       </div>
@@ -15,9 +12,9 @@
 </template>
 
 <script>
-import Sidebar from "./container/Sidebar.vue"
+import Sidebar from './container/Sidebar.vue'
 export default {
-  name: "App",
+  name: 'App',
   components: {
     Sidebar
   }
@@ -26,7 +23,7 @@ export default {
 
 <style>
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

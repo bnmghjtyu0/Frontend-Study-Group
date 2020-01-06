@@ -4,10 +4,10 @@
 
 <script>
 export default {
-  name: "Home",
+  name: 'Home',
   data() {
     return {
-      msg: "Home"
+      msg: '三個臭皮匠，勝過一個諸葛亮'
     }
   }
 }

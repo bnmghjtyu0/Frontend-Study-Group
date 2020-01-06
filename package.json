@@ -5,7 +5,7 @@
   "author": "mega <Mega@program.com.tw>",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js --host 0.0.0.0",
     "start": "npm run dev",
     "unit": "jest --config test/unit/jest.conf.js --coverage",
     "test": "npm run unit",
@@ -24,6 +24,7 @@
   "dependencies": {
     "sass-loader": "^7.3.1",
     "vue": "^2.5.2",
+    "vue-fragment": "^1.5.1",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {

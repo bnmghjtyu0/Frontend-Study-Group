@@ -1,31 +1,18 @@
 <template>
   <div class="sidebar">
+    <div>
+      <img :src="require('@/assets/' + 'three-pigs.jpg')" class="img-fluid" />
+    </div>
     <ul>
       <li>
-        <router-link to="/day1">
-          <a href="#">學習 blog</a>
+        <router-link to="/" active-class="active" exact>
+          <div class="title">首頁</div>
         </router-link>
-        <ul class="item">
-          <li>
-            <router-link to="/day2" class="active">
-              <div class="title">redux-進階</div>
-              <div class="date">20191209</div>
-            </router-link>
-          </li>
-        </ul>
       </li>
-
       <li>
-        <caption>
-          作業
-        </caption>
-        <ul>
-          <li>
-            <router-link to="/homework">
-              <div class="title">20191209 redux-todolist</div>
-            </router-link>
-          </li>
-        </ul>
+        <router-link to="/blog" active-class="active">
+          <div class="title">學習 blog</div>
+        </router-link>
       </li>
     </ul>
   </div>
@@ -33,6 +20,6 @@
 
 <script>
 export default {
-  name: "sidebar"
+  name: 'sidebar'
 }
 </script>
