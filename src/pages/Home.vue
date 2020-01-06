@@ -1,9 +1,9 @@
 <template>
-  <div>{{msg}}</div>
+  <div>{{ msg }}</div>
 </template>
 
 <script>
-export default  {
+export default {
   name: "Home",
   data() {
     return {
