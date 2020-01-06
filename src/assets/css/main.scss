@@ -16,6 +16,7 @@ $mainLightColor: #ccd2e3;
   color: $mainDeepColor;
 }
 
+
 body {
   padding: 20px;
   background-color: $backgroundColor;
@@ -28,6 +29,10 @@ body {
   min-height: 600px;
   display: block;
   padding: 0 20px;
+  flex-shrink: 0;
+  @include respond-to(xs) {
+    width: 100%;
+  }
   ul {
     margin-top: 20px;
     padding-left: 0;
@@ -50,6 +55,8 @@ body {
 }
 
 .main {
+  flex-grow: 1;
+  flex-shrink: 1;
   .header {
     width: 100%;
   }

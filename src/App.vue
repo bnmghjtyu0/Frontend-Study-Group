@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="container-fluid">
-      <div class="row">
+      <div class="row flex-nowrap-sm">
         <Sidebar />
         <div class="main ml-3">
           <router-view />
@@ -28,6 +28,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

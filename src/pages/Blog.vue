@@ -1,6 +1,19 @@
 <template>
   <fragment>
-    <Card message="From parent" />
+    <div class="d-grid">
+      <Card message="From parent" />
+      <Card message="From parent" />
+      <Card message="From parent" />
+      <Card message="From parent" />
+      <Card message="From parent" />
+      <Card message="From parent" />
+      <Card message="From parent" />
+      <Card message="From parent" />
+      <Card message="From parent" />
+      <Card message="From parent" />
+      <Card message="From parent" />
+      <Card message="From parent" />
+    </div>
     <div>{{ msg }}</div>
   </fragment>
 </template>
