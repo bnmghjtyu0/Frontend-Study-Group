@@ -1,6 +1,28 @@
 .super-card {
+  display: block;
   background-color: #fff;
-  .card-head {
-    padding: 12px;
+  border-radius: 6px;
+  box-shadow: 0 0 16px -2px rgba(99, 108, 231, 0.2);
+  padding: 12px;
+  &:hover {
+    text-decoration: none;
+  }
+  .super-card-head {
+    .badge {
+      padding: 8px 8px;
+      color: #ff6868;
+      background-color: #ffe9e9;
+    }
+    .title {
+      margin-top: 10px;
+      color: #445996;
+      font-weight: bold;
+    }
+  }
+  .super-card-body {
+    color: #7580a2;
+  }
+  .super-card-foot {
+    padding: 12px 0;
   }
 }

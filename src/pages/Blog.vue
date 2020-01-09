@@ -1,25 +1,23 @@
 <template>
   <fragment>
+    <h4 className="super-title">TeamBoard</h4>
     <div class="d-grid">
-      <Card message="From parent" />
-      <Card message="From parent" />
-      <Card message="From parent" />
-      <Card message="From parent" />
-      <Card message="From parent" />
-      <Card message="From parent" />
-      <Card message="From parent" />
-      <Card message="From parent" />
-      <Card message="From parent" />
-      <Card message="From parent" />
-      <Card message="From parent" />
-      <Card message="From parent" />
+      <div v-for="(item, index) in datas" :key="item.id">
+        <Card
+          :index="index"
+          :title="item.title"
+          :category="item.category"
+          :content="item.content"
+          :date="item.date"
+        />
+      </div>
     </div>
-    <div>{{ msg }}</div>
   </fragment>
 </template>
 
 <script>
 import Card from '../components/Card.vue'
+import axios from 'axios'
 export default {
   name: 'Blog',
   components: {
@@ -27,8 +25,18 @@ export default {
   },
   data() {
     return {
-      msg: 'blog'
+      msg: 'blog',
+      datas: []
     }
+  },
+  mounted() {
+    axios
+      .get(
+        'https://cors-anywhere.herokuapp.com/https://three-pigs.herokuapp.com/backend/articles'
+      )
+      .then(res => {
+        this.datas = res.data.retData
+      })
   }
 }
 </script>

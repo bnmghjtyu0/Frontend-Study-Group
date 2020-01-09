@@ -1,24 +1,22 @@
 <template>
-  <div class="Card super-card">
-    <div>
-      <div class="card-head">
-        <span>Business Team</span>
-        <h4>Digital Marketing</h4>
-      </div>
-      <div class="card-body">
-        In hac habitasse platea dictumst Vivamus adlipiscing fermentum quam
-        volutpat aliquam
-      </div>
-      <div class="card-foot">
-        <div class="left">123</div>
-        <div class="right"></div>
-      </div>
+  <router-link to="/:123" class="Card super-card">
+    <div class="super-card-head">
+      <span class="badge badge-primary">{{ category }}</span>
+      <h4 class="title">{{ title }}</h4>
     </div>
-  </div>
+    <div class="super-card-body">
+      {{ content }}
+    </div>
+    <div class="super-card-foot">
+      <div class="left">{{ date }}</div>
+      <div class="right"></div>
+    </div>
+  </router-link>
 </template>
 
 <script>
 export default {
-  name: 'Card'
+  name: 'Card',
+  props: ['content', 'title', 'category', 'date']
 }
 </script>

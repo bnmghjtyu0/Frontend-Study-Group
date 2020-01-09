@@ -16,7 +16,6 @@ $mainLightColor: #ccd2e3;
   color: $mainDeepColor;
 }
 
-
 body {
   padding: 20px;
   background-color: $backgroundColor;
@@ -60,4 +59,10 @@ body {
   .header {
     width: 100%;
   }
+}
+
+.super-title {
+  color: #445996;
+  font-size: 15px;
+  font-weight: bold;
 }
