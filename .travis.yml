@@ -1,3 +1,17 @@
+language: node_js
+
+node_js:
+  - '4.0'
+
+before_install:
+  - export TZ=Asia/Taipei
+
+install:
+  - npm install
+
+script:
+  - npm run build
+
 deploy:
   provider: pages
   skip_cleanup: true
