@@ -7,9 +7,9 @@ cache: npm
 script: npm run build
 
 deploy:
-  provider: releases
+  provider: pages
   skip_cleanup: true
-  github_token: $GITHUB_TOKEN
-  local_dir: dist
+  github_token: $GITHUB_TOKEN #在 travis environment 加入 GITHUB_TOKEN
+  local_dir: dist #本地路徑
   on:
     branch: develop
