@@ -7,9 +7,9 @@ cache: npm
 script: npm run build
 
 deploy:
-  provider: pages
+  provider: releases
   skip_cleanup: true
-  github_token: bd568e6577781c2344d45f863fb32f1c22052d8e
+  github_token: $GITHUB_TOKEN
   local_dir: dist
   on:
     branch: develop
