@@ -14,6 +14,11 @@
           <div class="title">學習 blog</div>
         </router-link>
       </li>
+      <li>
+        <router-link to="/learn-garden" active-class="active">
+          <div class="title">學習資源</div>
+        </router-link>
+      </li>
     </ul>
   </div>
 </template>

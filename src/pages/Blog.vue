@@ -1,6 +1,6 @@
 <template>
   <fragment>
-    <h4 className="super-title">TeamBoard</h4>
+    <h4 className="super-title mb-3">小紅帽的家</h4>
     <div class="d-grid">
       <div v-for="(item, index) in datas" :key="item.id">
         <Card
