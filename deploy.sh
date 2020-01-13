@@ -22,6 +22,6 @@ git commit -m 'deploy'
 
 # deploy
 # git push -f git@github.com:<username>/<repo>.git <branch>
-git push -f https://github.com@github.com:bnmghjtyu0/Frontend-Study-Group.git gh-pages
+git push -f https://github.com@github.com:bnmghjtyu0/Frontend-Study-Group.git develop:gh-pages
 
 cd -
