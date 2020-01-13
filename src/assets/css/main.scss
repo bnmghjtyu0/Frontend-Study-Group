@@ -18,7 +18,7 @@ $mainLightColor: #ccd2e3;
 
 body {
   padding: 20px;
-  background-color: $backgroundColor;
+  background-color: $backgroundColor !important;
   font-family: 'Merienda', 'Microsoft JhengHei', cursive;
 }
 
